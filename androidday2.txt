@@ -1,0 +1,36 @@
+*
+1.)
+fun main() {
+    val a = 10
+    val b = 20
+    val result = "Sum of $a and $b is ${a + b}"
+    println(result)
+}
+
+*
+2.)
+fun main() {
+    val letter: Char
+    letter = 'A'
+    print("$letter")
+    print("\n")
+    print("\$")
+    print("\\")
+}
+
+*
+3.)
+fun main() {
+    val name = "\t Dhanush \n Dhanush \t Dhanush \n\t Dhanush"
+    print(name)
+}
+
+*
+4.)
+fun main() {
+    val numbers = arrayOf(1, 2, 3, 4, 5)
+    println(numbers[0])
+    val words: Array<String> = arrayOf("kotlin", "Dhanush", "Srinivas")
+    println(words[2])
+    
+}
