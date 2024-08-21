@@ -1,0 +1,56 @@
+**1.
+fun main(args: Array)
+{
+var a = 40
+print(a)
+var `try` = 20
+print(`try`)
+}
+
+sol : 4020
+
+**2.
+fun main(args: Array)
+{
+}
+var a = 40
+print(a)
+val b = 20
+print(b)
+b = b+10
+
+sol : 'val' cannot be reassigned.
+
+**3.
+fun main() {
+}
+var a = 40
+var b String
+print(a)
+
+sol: 40
+
+**4.
+fun main() {
+var message = "hello"
+print (message)
+}
+
+sol: hello
+
+**5.
+class Person
+{
+var kotlin = "hello"
+fun displayInfo()
+{
+println(kotlin)
+}
+}
+fun main()
+{
+val person = Person()
+person.displayInfo()
+}
+
+sol: hello
