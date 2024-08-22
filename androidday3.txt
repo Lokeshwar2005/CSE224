@@ -1,0 +1,79 @@
+1.**
+
+fun main() {
+
+    val numbers = arrayOf(1,2,3,4,5)
+
+    val words:Array<String> = arrayOf("kotlin","Java","Python")
+
+    val squares = Array(5){i -> i * i}
+
+    numbers[0] = 9
+
+    words[1] = "Dhanush"
+
+    val firstNumber = numbers[0]
+
+    val secondword = words[1]
+
+    val thirdSquare = squares[2]
+
+    println("First number: $firstNumber")
+
+    println("Second word: $secondword")
+
+    println("third square: $thirdSquare")
+
+    for (num in numbers)
+
+    {
+
+        println(num)
+
+    }
+
+    
+
+}
+
+
+
+2**
+
+#String data type
+
+fun main()
+
+{
+
+val numbers = array0f(1,2,3,4,5)
+
+val words: Array<String> = arrayOf("Kotlin", "Python", "Java")
+
+val squares = Array(5) {111}
+
+val firstNumber = numbers [0]
+
+val secondWord = words [1]
+
+println("First number: $firstNumber")
+
+println("Second word: $secondWord")
+
+}
+
+
+
+3**
+
+fun main()
+
+{
+
+//2-D Arrays val matrix:Array<Array<Int>> = array0f(array0f(1,2,3), array0f(4,5,6), array0f(7,8,9)) 
+
+println("Element at row 0, column 1: ${matrix [0][1]}")
+
+
+
+}
