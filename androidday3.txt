@@ -77,3 +77,15 @@ println("Element at row 0, column 1: ${matrix [0][1]}")
 
 
 }
+
+4**
+
+fun main(){
+    var matrix  = arrayOf( arrayOf(1,2,3), arrayOf(4,5,6), arrayOf(2,1,4));
+    for (row in matrix){
+        for( element in row) {
+            print("${element} ");
+        }
+        println();
+    }
+}
