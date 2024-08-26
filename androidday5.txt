@@ -1,0 +1,165 @@
+//if statement
+
+fun main() {
+val temperature = 25
+if(temperature > 20)
+{
+println("It's a warm day.")
+}
+}
+
+
+//if-else statement
+
+fun main()
+{
+val age = 15
+if(age >=18) {
+println("You are an adult.")
+
+
+}
+else
+println("You are a minor.")
+}
+
+//Example if-else-if-else Ladder
+fun main()
+{
+val result = 58
+if (result >= 90) {
+println("You got A grade")
+
+}
+if (result >= 80) {
+println("You got B grade")
+
+} 
+if (result >= 70) {
+println("You got C grade")
+
+}
+else
+println("You got D grade")
+}
+
+
+
+//Nested-loop If -else
+
+fun main()
+{
+val age = 20
+val hasID = true
+if (age >= 18) {
+if (hasID){
+println("you can enter the club.")
+
+}
+else{
+println("ID required to enter the club.")
+}
+}
+else{
+println("You are can not enter")
+}
+}
+
+
+//Creating a Calculator using if-else statement
+
+fun main() {
+//calculator
+val a = 15
+val b = 17
+val c = "*"
+if (c== "+")
+{
+println(a+b)
+}
+else if(c== "-")
+{
+println(a-b)
+}
+else if(c== "*")
+{
+println(a*b)
+}
+else if(c== "/")
+{
+println(a/b)
+}
+else if (c== "%")
+{
+println(a%b)
+}
+else
+{
+println("Error: Unsupported operator")
+}
+}
+
+
+
+//Example:3 Age Classification
+
+fun main() {
+val age = 15 
+if (age < 13) 
+{
+println("You are a child.") 
+}
+else if (age in 13..19) {
+println("You are a teenager.")
+
+}
+else if ( age in 20..64) {
+println("You are an adult.")
+
+}
+else {
+println("You are a senior.")
+}
+}
+
+//note
+
+//when is used as an expression 'when' returns a value that can be assigned to a variable directly
+
+
+//when statement
+
+fun main()
+{
+val dayofweek = 3
+val dayname = when(dayofweek)
+{
+1 -> "Monday"
+2 -> "Tuesday"
+3 -> "Wednesday"
+4 -> "Thursday"
+5 -> "Friday"
+6 -> "Saturday"
+7 -> "Sunday"
+else -> "Invalid day"
+}
+println("Day of the week: $dayname")
+
+}
+
+//ex
+
+
+
+fun main()
+{
+val number = 8
+when{
+number % 2 == 0 -> println("$number is even")
+number % 2 != 0 -> println("$number is odd")
+else -> println("unexpected number")
+
+}
+}
+
+
