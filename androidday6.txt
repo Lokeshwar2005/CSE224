@@ -1,0 +1,120 @@
+//for-loop statement
+
+// The for loop in kotlin is used to iterate over a range of values, collections, or arrays.
+
+
+/*fun main()
+{
+for(i in 1..5){
+println("Number: $i")
+}
+}*/
+
+
+
+//Reverse loop
+
+/*fun main()
+{
+for(item in 5 downTo 1){
+println(item)
+}
+}*/
+
+
+//Reverse with step size
+
+/*fun main(args: Array<String>)
+{
+for(item in 5 downTo 1 step 2){
+println(item)
+}
+}*/
+
+
+// Iterating over a List
+// when only element need to be accessed.
+
+/*fun main()
+{
+val fruits = listOf("Apple","Banana","Cherry")
+for(fruit in fruits){
+println("fruit: $fruit")
+}
+}*/
+
+
+/*fun main() {
+val fruits = listOf("Apple", "Banana", "cherry")
+for (index in fruits.indices){
+println("Fruit at index $index is ${fruits[index]}")
+}
+}*/
+
+
+// While loop
+// While loop repeatedly executes a block of codes.package
+
+/*fun main(){
+var i =5
+while(i>0){
+println("value is: $i")
+i--
+}
+}*/
+
+/* Output: 
+value is: 5
+value is: 4
+value is: 3
+value is: 2
+value is: 1 */
+
+
+//Do-While loop
+//Do-while loop executes a block of code once before checking the condition and then repeats the loop as long as the condition is true.
+
+
+/*fun main()
+{
+var i = 5
+do{
+println("value is: $i")
+i-- // i=i-1
+}
+while (i>0) // 4>0
+}*/
+
+
+
+/*fun main()
+{
+var i = 1
+do{
+println("value is: $i")
+i++ 
+}
+while (i<=5) 
+}*/
+
+
+/* Functions in Kotlin 
+
+* Functions are reusable blocks of code that perform a specific task.They help in reducing code duplication and
+improving readability and maintainability. 
+
+* Functions are also known as methods or subroutines.*/
+
+fun demo()
+{
+println("Hello world")
+
+}
+fun main(args:Array<String>)
+{
+demo()
+}
+
+
+
+
