@@ -1,0 +1,106 @@
+// Functions in Kotlin 
+
+//Default Arguments
+
+/*fun sum(a:Int=10,b:Int=20)
+{
+val c=a+b
+println(c)
+
+}
+fun main(){
+sum(20,50)
+sum()
+}*/
+
+
+
+//Without default Arguments
+
+/*fun sum(a:Int,b:Int)
+{
+val c=a+b
+println(c)
+}
+fun main(){
+sum(20,50)
+//sum() //this line will give error
+}*/
+
+
+
+//Returning values from a function
+/* It is optional for a kotlin function to return a value.
+* 0 return a value , use the return keyword.*/
+
+
+/*fun main(){
+val a=10
+val b=20
+val result = sum(a, b)
+println(result)
+}
+
+fun sum(a:Int, b:Int):Int{
+val x = a + b
+return x
+}*/
+
+
+
+// Create a function to convert temperatures from Celsius to Fahrenhiet and vice versa.
+
+/*fun main() {
+val celsius = 25
+val fahrenheit = 77
+
+println("$celsius°C is equal to ${celsiusToFahrenheit(celsius)}°F")
+println("$fahrenheit°F is equal to ${fahrenheitToCelsius(fahrenheit)}°C")
+}
+
+fun celsiusToFahrenheit(temperature: Int): Double {
+return (temperature * 9.0 / 5.0) + 32
+}
+
+fun fahrenheitToCelsius(temperature: Int): Double {
+return (temperature - 32) * 5.0 / 9.0
+}*/
+
+
+// Recursive function
+/* A recursive function is one that calls itself in order to solve a problem.The function typically has 2 main parts:
+
+1)Base Case 2) Recursive Case */
+
+/*operatorfun factorial(n: Int): Int {
+return if (n <= 1) 1 else n * factorial(n-1)
+}
+fun main(){
+println("enter the number to find factorial")
+var y:Int = readln().toInt()
+var x=factorial(y)
+print(x)
+}*/
+
+
+
+//Class in Kotlin
+
+/* A Class is a blueprint for creating objects.
+* Kotlin classes are declared using a keyword class.
+* Kotlin class has a class header which specifies its type parameters,constructor etc. */
+
+
+
+class Student{
+fun result()
+{
+println("Pending")
+}
+
+}
+fun main()
+{
+val s1 = Student()
+s1.result()
+}
