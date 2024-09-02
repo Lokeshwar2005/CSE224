@@ -1,0 +1,114 @@
+/*Secondary Constuctor
+ 
+ It is an additional way to create an object.It's a useful when you need to set up the object with different parameters 
+ or extra logic. */
+
+
+/* fun main() {
+    val a = Person("Riya",22)
+    a.intro()
+    val b=Person()
+    b.intro()
+    val c=Person("Heena")
+    c.intro()
+}
+
+
+
+class Person {
+    var name: String
+    var age:Int
+
+    constructor(x:String,y:Int){
+        this.name = x
+        this.age = y
+    }
+    constructor(x:String){
+        this.name = x
+        this.age = 0
+    }
+    constructor(){
+        this.name="Rahul"
+        this.age= 32
+    }
+    fun intro(){
+        println("my name is $name and age is $age")
+    }
+} */
+
+
+
+
+//Using Primary Constructor
+// The primary constructor is a simple,concise way to intialize a class.It is defined right after the class name.
+ 
+
+fun main() {
+    val a = Person("Riya",22)
+    a.intro()
+    val b=Person()
+    b.intro()
+    val c=Person("Heena")
+    c.intro()
+}
+
+class Person(var name:String,var age:Int){
+    constructor(x:String) : this(){
+        this.name = x
+        this.age = 0
+    }
+    constructor() : this("rahul",50)
+    fun intro(){
+        println("my name is $name and age is $age")
+    }
+}
+
+
+/*. Inheritance in kotlin
+ 
+* Inheritance is a feature of object-oriented programming that allows a new class(derived class) to inherit properties
+ and methods from an existing class(base class).This promotes code reuse and establishes a hierarchical relationship
+ between classes.
+ 
+* The class whose properties and methods are inherited by another class is called base class.
+
+* The class that inherits properties and methods from the base class is called derived class. */
+
+
+fun main(){
+    val myRectangle = Rectangle(4.0,5.0)
+    myRectangle.display()
+    val mySquare = Square(3.0)
+    mySquare.display()
+}
+ 
+open class Rectangle(val a: Double, val b:Double){
+    fun area():Double {
+        return a*b
+    }
+    open fun display(){
+        println("area of rectangle with dimensions $a * $b is ${area()}")
+    }
+}
+
+class Square(side:Double) : Rectangle(side,side){
+    override fun display() {
+        println("area of sqaure with side $a is ${area()}")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
